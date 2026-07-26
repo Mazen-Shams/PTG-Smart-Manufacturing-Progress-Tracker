@@ -781,14 +781,14 @@
       "step_code": "s5",
       "name": "Final Dashboard Review & Alignments",
       "assigned_to": "Ahmed Daoud",
-      "duration": 11,
-      "start_date": "2026-07-25",
+      "duration": 5,
+      "start_date": "2026-07-31",
       "end_date": "2026-08-05",
       "progress": 0,
       "status": "Not started",
       "dependencies": "s4",
       "section": "TRIAL",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 35,
