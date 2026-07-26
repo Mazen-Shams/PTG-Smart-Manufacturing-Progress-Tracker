@@ -1130,7 +1130,7 @@
       "start_date": "",
       "end_date": "",
       "progress": 0,
-      "status": "In progress",
+      "status": "Not started",
       "dependencies": "",
       "section": "DEPLOY",
       "external_dep": ""
