@@ -1699,8 +1699,8 @@
       "duration": 1,
       "start_date": null,
       "end_date": null,
-      "progress": 0,
-      "status": "Not started",
+      "progress": 50,
+      "status": "On Hold",
       "dependencies": null,
       "section": null,
       "external_dep": null
