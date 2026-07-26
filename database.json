@@ -102,15 +102,15 @@
       "id": 9,
       "name": "Data Matrix on Mixer Compound",
       "description": "",
-      "status": "On Hold",
+      "status": "In progress",
       "priority": 9999,
-      "start_date": null,
+      "start_date": "2026-07-16",
       "due_date": null,
       "assigned_to": "Team",
-      "latest_update": null,
-      "next_step": "Initial project planning",
+      "latest_update": "C5 Red Ink DataMatrix Trial Evaluation (Low Read Rate 1/6)",
+      "next_step": "C5 High-Contrast Orange Ink DataMatrix Reading Trial",
       "blocked_by": null,
-      "notes": ""
+      "notes": "Red ink trial on C5 compound yielded low read rate (~1 in 6-7) due to low contrast and compound surface irregularities. Software POV & C5 POV videos captured. Agreed with IT (Amr Mansy) & Mixer team to test Orange ink next."
     },
     {
       "id": 10,
@@ -956,36 +956,6 @@
       "external_dep": null
     },
     {
-      "id": 49,
-      "project_id": 9,
-      "step_code": "s1",
-      "name": "Initial project planning",
-      "assigned_to": "Team",
-      "duration": 0,
-      "start_date": "2026-07-16",
-      "end_date": "2026-07-21",
-      "progress": 50,
-      "status": "In progress",
-      "dependencies": null,
-      "section": "CURRENT",
-      "external_dep": null
-    },
-    {
-      "id": 50,
-      "project_id": 9,
-      "step_code": "s2",
-      "name": "Requirements definition",
-      "assigned_to": "Team",
-      "duration": 0,
-      "start_date": "2026-07-21",
-      "end_date": "2026-07-26",
-      "progress": 0,
-      "status": "Not started",
-      "dependencies": "s1",
-      "section": "FUTURE",
-      "external_dep": null
-    },
-    {
       "id": 51,
       "project_id": 10,
       "step_code": "s1",
@@ -1719,6 +1689,81 @@
       "dependencies": "",
       "section": "",
       "external_dep": ""
+    },
+    {
+      "id": 102,
+      "project_id": 9,
+      "step_code": "s1",
+      "name": "Camera Setup & C5 Conveyor Interface",
+      "assigned_to": "Team",
+      "duration": 5,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-21",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": null,
+      "section": "SETUP",
+      "external_dep": null
+    },
+    {
+      "id": 103,
+      "project_id": 9,
+      "step_code": "s2",
+      "name": "C5 Red Ink DataMatrix Trial & Read Rate Analysis",
+      "assigned_to": "Team",
+      "duration": 5,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-26",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s1",
+      "section": "TRIAL",
+      "external_dep": null
+    },
+    {
+      "id": 104,
+      "project_id": 9,
+      "step_code": "s3",
+      "name": "C5 Orange Ink Printing & High-Contrast Readability Trial",
+      "assigned_to": "Team",
+      "duration": 5,
+      "start_date": "2026-07-26",
+      "end_date": "2026-07-31",
+      "progress": 10,
+      "status": "In progress",
+      "dependencies": "s2",
+      "section": "TRIAL",
+      "external_dep": "Mixer Team & IT (Amr Mansy)"
+    },
+    {
+      "id": 105,
+      "project_id": 9,
+      "step_code": "s4",
+      "name": "Optics, Focal Distance & Surface Geometry Optimization",
+      "assigned_to": "Team",
+      "duration": 5,
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-05",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s3",
+      "section": "OPTIMIZATION",
+      "external_dep": null
+    },
+    {
+      "id": 106,
+      "project_id": 9,
+      "step_code": "s5",
+      "name": "Mixer Compound DataMatrix Final Validation & System Integration",
+      "assigned_to": "Team",
+      "duration": 5,
+      "start_date": "2026-08-06",
+      "end_date": "2026-08-10",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s4",
+      "section": "DEPLOY",
+      "external_dep": null
     }
   ],
   "logs": [
@@ -1874,6 +1919,17 @@
       "planned_today": null,
       "actually_done": "added kepware tags for mchs 12 and 22",
       "comments": "tags are bad quality in quick client",
+      "type": "Primary"
+    },
+    {
+      "id": 15,
+      "project_id": 9,
+      "project_name": "Data Matrix on Mixer Compound",
+      "date": "2026-07-26",
+      "engineer": "Mazen",
+      "planned_today": "Evaluate C5 Red Ink DataMatrix Trial & share results with team",
+      "actually_done": "Tested Red Ink on C5 (1/6-7 read rate due to contrast & surface irregularities). Shared software & C5 POV videos with IT/Mixer team. Agreed to test Orange ink.",
+      "comments": "Looping in Mixer team (Mostafa Ewaiss, Ahmed Hamdy, Yehia, Eng Hisham, Dr Ramadan, Eng Abdelhamid) and IT (Amr Mansy).",
       "type": "Primary"
     }
   ]
