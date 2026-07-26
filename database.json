@@ -1834,6 +1834,17 @@
       "actually_done": "Check C1 Camera",
       "comments": null,
       "type": "Primary"
+    },
+    {
+      "id": 14,
+      "project_id": 1,
+      "project_name": "Tread Barcode Scan",
+      "date": "2026-07-26",
+      "engineer": "Mazen",
+      "planned_today": null,
+      "actually_done": "added kepware tags for mchs 12 and 22",
+      "comments": "tags are bad quality in quick client",
+      "type": "Primary"
     }
   ]
 }
