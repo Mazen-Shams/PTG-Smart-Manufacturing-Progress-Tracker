@@ -102,14 +102,14 @@
       "id": 9,
       "name": "Data Matrix on Mixer Compound",
       "description": "",
-      "status": "In progress",
+      "status": "On Hold",
       "priority": 9999,
       "start_date": "2026-07-16",
       "due_date": null,
       "assigned_to": "Team",
-      "latest_update": "C5 Red Ink DataMatrix Trial Evaluation (Low Read Rate 1/6)",
-      "next_step": "C5 High-Contrast Orange Ink DataMatrix Reading Trial",
-      "blocked_by": null,
+      "latest_update": "C5 Red Ink DataMatrix Trial & Read Rate Analysis",
+      "next_step": "C5 Orange Ink Printing & High-Contrast Readability Trial",
+      "blocked_by": "Mixer Team & IT (Amr Mansy)",
       "notes": "Red ink trial on C5 compound yielded low read rate (~1 in 6-7) due to low contrast and compound surface irregularities. Software POV & C5 POV videos captured. Agreed with IT (Amr Mansy) & Mixer team to test Orange ink next."
     },
     {
