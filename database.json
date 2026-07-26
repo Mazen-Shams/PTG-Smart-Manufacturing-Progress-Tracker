@@ -164,7 +164,7 @@
       "due_date": null,
       "assigned_to": "Team",
       "latest_update": "Gave a PC to Ahmed Elsayed",
-      "next_step": null,
+      "next_step": "Record data/values for  preventative/predictive maintenance",
       "blocked_by": null,
       "notes": ""
     },
@@ -1687,6 +1687,21 @@
       "progress": 100,
       "status": "Completed",
       "dependencies": "s1",
+      "section": null,
+      "external_dep": null
+    },
+    {
+      "id": 100,
+      "project_id": 13,
+      "step_code": "s2",
+      "name": "Record data/values for  preventative/predictive maintenance",
+      "assigned_to": null,
+      "duration": 1,
+      "start_date": null,
+      "end_date": null,
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": null,
       "section": null,
       "external_dep": null
     }
