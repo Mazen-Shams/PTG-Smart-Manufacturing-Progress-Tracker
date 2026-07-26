@@ -1112,13 +1112,13 @@
       "name": "Phase 10: Reporting & Analytics Dashboard",
       "assigned_to": "Mazen",
       "duration": 0,
-      "start_date": "2026-07-08",
-      "end_date": "2026-07-09",
+      "start_date": "",
+      "end_date": "",
       "progress": 50,
       "status": "In progress",
-      "dependencies": null,
+      "dependencies": "",
       "section": "SETUP",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 62,
