@@ -136,7 +136,7 @@
       "due_date": null,
       "assigned_to": "Team",
       "latest_update": "Requirements definition",
-      "next_step": "Inspect Eng.Ahmed yehia's CSV",
+      "next_step": "Inspect the sent CSV by Eng.Ahmed yehia's",
       "blocked_by": null,
       "notes": ""
     },
@@ -1709,16 +1709,16 @@
       "id": 101,
       "project_id": 11,
       "step_code": "s3",
-      "name": "Inspect Eng.Ahmed yehia's CSV",
-      "assigned_to": null,
+      "name": "Inspect the sent CSV by Eng.Ahmed yehia's",
+      "assigned_to": "",
       "duration": 1,
-      "start_date": null,
-      "end_date": null,
+      "start_date": "",
+      "end_date": "",
       "progress": 25,
       "status": "In progress",
-      "dependencies": null,
-      "section": null,
-      "external_dep": null
+      "dependencies": "",
+      "section": "",
+      "external_dep": ""
     }
   ],
   "logs": [
