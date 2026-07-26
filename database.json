@@ -766,14 +766,14 @@
       "step_code": "s4",
       "name": "Power BI Refresh & FA Category Integration",
       "assigned_to": "Team",
-      "duration": 11,
+      "duration": 14,
       "start_date": "2026-07-14",
-      "end_date": "2026-07-25",
-      "progress": 40,
+      "end_date": "2026-07-28",
+      "progress": 0,
       "status": "In progress",
       "dependencies": "s3",
       "section": "TRIAL",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 34,
