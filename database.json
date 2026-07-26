@@ -289,7 +289,7 @@
       "start_date": null,
       "due_date": null,
       "assigned_to": "Team",
-      "latest_update": "Not started",
+      "latest_update": null,
       "next_step": "Initial project planning",
       "blocked_by": null,
       "notes": ""
@@ -1444,7 +1444,7 @@
       "duration": 0,
       "start_date": "2026-07-09",
       "end_date": "2026-07-14",
-      "progress": 50,
+      "progress": 25,
       "status": "In progress",
       "dependencies": null,
       "section": "CURRENT",
