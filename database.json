@@ -1691,6 +1691,21 @@
       "external_dep": ""
     },
     {
+      "id": 107,
+      "project_id": 9,
+      "step_code": "s0",
+      "name": "R&D Approval for C5 Extruder Technical Trial",
+      "assigned_to": "Team",
+      "duration": 5,
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-15",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": null,
+      "section": "APPROVAL",
+      "external_dep": "R&D (Eng. Ismail Abdallah, Eng. Mahgoub Adel, Eng. Hamdy Ahmed)"
+    },
+    {
       "id": 102,
       "project_id": 9,
       "step_code": "s1",
@@ -1701,7 +1716,7 @@
       "end_date": "2026-07-21",
       "progress": 100,
       "status": "Completed",
-      "dependencies": null,
+      "dependencies": "s0",
       "section": "SETUP",
       "external_dep": null
     },
