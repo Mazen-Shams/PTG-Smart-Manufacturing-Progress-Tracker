@@ -658,7 +658,7 @@
     {
       "id": 26,
       "project_id": 2,
-      "step_code": "s8",
+      "step_code": "s7",
       "name": "Calibration",
       "assigned_to": "Nada",
       "duration": 11,
