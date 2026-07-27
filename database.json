@@ -24,7 +24,7 @@
       "due_date": null,
       "assigned_to": "Team",
       "latest_update": "2nd Review",
-      "next_step": "Calibration",
+      "next_step": "Object Detection Training",
       "blocked_by": null,
       "notes": ""
     },
@@ -1618,7 +1618,7 @@
     {
       "id": 95,
       "project_id": 2,
-      "step_code": "S8",
+      "step_code": "S7",
       "name": "Object Detection Training",
       "assigned_to": "Nada",
       "duration": 7,
