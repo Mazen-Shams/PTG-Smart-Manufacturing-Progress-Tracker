@@ -1834,6 +1834,17 @@
       "actually_done": "Camera configured to stay on a green light after a read done for 9 and 22\n\nKepware done for 22, 2, 3\n\nIn process of fixing a connection error for 22 not logging in DB (it was not pinging - now it pings but still not logging)",
       "comments": null,
       "type": "Primary"
+    },
+    {
+      "id": 14,
+      "project_id": 1,
+      "project_name": "Tread Barcode Scan",
+      "date": "2026-07-26",
+      "engineer": "Mazen",
+      "planned_today": null,
+      "actually_done": "Kepware done for 12 and camera configured for 22",
+      "comments": null,
+      "type": "Primary"
     }
   ]
 }
