@@ -676,14 +676,14 @@
       "step_code": "s9",
       "name": "3rd Review",
       "assigned_to": "Nada",
-      "duration": 0,
-      "start_date": "2026-07-26",
-      "end_date": "2026-07-26",
+      "duration": 4,
+      "start_date": "2026-07-30",
+      "end_date": "2026-08-03",
       "progress": 0,
       "status": "Not started",
       "dependencies": "s8",
       "section": "DEPLOY",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 28,
