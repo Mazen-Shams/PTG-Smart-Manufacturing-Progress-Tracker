@@ -9,10 +9,10 @@
       "start_date": "2026-06-12",
       "due_date": "",
       "assigned_to": "Team",
-      "latest_update": "C1 Printing Feedback & Mch 9 Readability Verification",
-      "next_step": "Camera IP Wireless Network Access Configuration",
-      "blocked_by": "IT / Network",
-      "notes": "MOM 21/7: Zebra cameras moved to main axis for Mch 1, 6, 18, 12, 22. IT handheld validation logic & Kepware signal setup ready for trial."
+      "latest_update": "KEPServerEX Verification (Mch 2, 3, 9, 12, 22) & Dremio Sync Escalated",
+      "next_step": "IT Dremio Log Sync Fix & Quality/Ops Handheld Trial (Mch 2, 3, 12, 22)",
+      "blocked_by": "IT / Dremio Log Sync",
+      "notes": "MOM 28/7: KEPServerEX & Camera setup 100% verified for Mch 2, 3, 9, 12, 22. Dremio sync issue logged to IT (@Osman Ahmed, @Nabil Ahmed); Handheld deployment assigned to Ops (@Attia Yasser); Barcode printing assigned to Quality (@Ashraf Nada, @Khalifa Ahmed)."
     },
     {
       "id": 2,
@@ -549,6 +549,66 @@
       "dependencies": "s15",
       "section": "DEPLOY",
       "external_dep": "BU Production"
+    },
+    {
+      "id": 100,
+      "project_id": 1,
+      "step_code": "s17",
+      "name": "KEPServerEX Signal Standardization & Link Tags (Mch 2, 3, 9, 12, 22)",
+      "assigned_to": "Mazen / Electrical",
+      "duration": 2,
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-28",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s10",
+      "section": "DEPLOY",
+      "external_dep": "Kepware / Electrical"
+    },
+    {
+      "id": 101,
+      "project_id": 1,
+      "step_code": "s18",
+      "name": "Dremio Camera Log Sync & IT Stored Procedure Integration",
+      "assigned_to": "IT / Network (Osman / Nabil)",
+      "duration": 3,
+      "start_date": "2026-07-28",
+      "end_date": "2026-07-31",
+      "progress": 25,
+      "status": "In progress",
+      "dependencies": "s17",
+      "section": "DEPLOY",
+      "external_dep": "IT"
+    },
+    {
+      "id": 102,
+      "project_id": 1,
+      "step_code": "s19",
+      "name": "Handheld Scanner Operator Deployment (Mch 2, 3, 12, 22)",
+      "assigned_to": "Operations (Attia Yasser)",
+      "duration": 3,
+      "start_date": "2026-07-28",
+      "end_date": "2026-07-31",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s18",
+      "section": "DEPLOY",
+      "external_dep": "Operations"
+    },
+    {
+      "id": 103,
+      "project_id": 1,
+      "step_code": "s20",
+      "name": "Quality C1 Recipe Test Barcode Printing (Mch 2, 3, 9, 12, 22)",
+      "assigned_to": "Quality (Ashraf / Khalifa)",
+      "duration": 3,
+      "start_date": "2026-07-28",
+      "end_date": "2026-07-31",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s17",
+      "section": "DEPLOY",
+      "external_dep": "Quality"
     },
     {
       "id": 19,
@@ -1844,6 +1904,17 @@
       "planned_today": null,
       "actually_done": "Kepware done for 12 and camera configured for 22",
       "comments": null,
+      "type": "Primary"
+    },
+    {
+      "id": 15,
+      "project_id": 1,
+      "project_name": "Tread Barcode Scan",
+      "date": "2026-07-28",
+      "engineer": "Mazen",
+      "planned_today": "KEPServerEX verification & Dremio sync issue escalation",
+      "actually_done": "KEPServerEX integration finalized & verified for Mch 2, 3, 9, 12, 22. Dremio sync issue identified (camera writes to Manex table but stuck since 17/7 in Dremio) and email update dispatched to CTO & IT/Quality leads (@Osman, @Nabil, @Attia, @Ashraf, @Khalifa).",
+      "comments": "Awaiting IT Dremio sync fix & Quality barcode/handheld trial",
       "type": "Primary"
     }
   ]
