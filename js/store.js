@@ -120,7 +120,30 @@ async function saveJsonFileToGitHub(config, filename, data, commitMessage, force
     return sha;
 }
 
-// Save database to GitHub (optimized to write a single database.json)
+// Helper function to merge local and remote database records by unique ID
+function mergeDatabasePayloads(localData, remoteData) {
+    if (!remoteData) return localData;
+
+    const mergeById = (localArr = [], remoteArr = []) => {
+        const merged = [...localArr];
+        const localIds = new Set(localArr.map(item => item && item.id).filter(id => id != null));
+        
+        for (const remoteItem of remoteArr) {
+            if (remoteItem && remoteItem.id != null && !localIds.has(remoteItem.id)) {
+                merged.push(remoteItem);
+            }
+        }
+        return merged;
+    };
+
+    return {
+        projects: mergeById(localData.projects, remoteData.projects),
+        steps: mergeById(localData.steps, remoteData.steps),
+        logs: mergeById(localData.logs, remoteData.logs)
+    };
+}
+
+// Save database to GitHub (optimized to write a single database.json with smart merging)
 async function saveDatabaseToGitHub(config, commitMessage = null, force = false) {
     const { repo, token, branch, folder } = config;
     const pathPrefix = folder ? `${folder.replace(/\/$/, '')}/` : '';
@@ -129,27 +152,50 @@ async function saveDatabaseToGitHub(config, commitMessage = null, force = false)
         'Accept': 'application/vnd.github.v3+json'
     };
 
-    // 1. Fetch current database.json details to get the SHA
+    // 1. Fetch current database.json details to get the SHA and remote data for smart merging
     const url = `https://api.github.com/repos/${repo}/contents/${pathPrefix}database.json?ref=${branch}&t=` + Date.now();
     const getRes = await fetch(url, { headers, cache: 'no-store' });
     let sha = null;
+    let remoteData = null;
+
     if (getRes.ok) {
         const fileData = await getRes.json();
         sha = fileData.sha;
+        if (fileData.content) {
+            try {
+                const decoded = decodeURIComponent(escape(atob(fileData.content.replace(/\s/g, ''))));
+                remoteData = JSON.parse(decoded);
+            } catch (e) {
+                console.warn("Could not decode remote database.json for smart merge:", e);
+            }
+        }
     }
 
-    // Conflict Check
-    const loadedSha = localStorage.getItem('sm_progress_loaded_sha');
-    if (loadedSha && sha && loadedSha !== sha && !force) {
-        console.warn(`Conflict detected! Loaded SHA: ${loadedSha}, Remote SHA: ${sha}`);
-        throw new Error("CONFLICT_DETECTED");
+    // Retrieve current local arrays
+    let localProjects = getItems(STORAGE_KEYS.PROJECTS);
+    let localSteps = getItems(STORAGE_KEYS.STEPS);
+    let localLogs = getItems(STORAGE_KEYS.LOGS);
+
+    // Smart merge: ensure remote records created on other devices are preserved
+    if (remoteData) {
+        const merged = mergeDatabasePayloads(
+            { projects: localProjects, steps: localSteps, logs: localLogs },
+            remoteData
+        );
+        localProjects = merged.projects;
+        localSteps = merged.steps;
+        localLogs = merged.logs;
+
+        // Sync merged data back to localStorage
+        setItems(STORAGE_KEYS.PROJECTS, localProjects);
+        setItems(STORAGE_KEYS.STEPS, localSteps);
+        setItems(STORAGE_KEYS.LOGS, localLogs);
     }
 
-    // 2. Prepare unified data payload
     const unifiedData = {
-        projects: getItems(STORAGE_KEYS.PROJECTS),
-        steps: getItems(STORAGE_KEYS.STEPS),
-        logs: getItems(STORAGE_KEYS.LOGS)
+        projects: localProjects,
+        steps: localSteps,
+        logs: localLogs
     };
 
     return await saveJsonFileToGitHub(config, 'database.json', unifiedData, commitMessage, force, sha);
