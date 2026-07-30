@@ -2133,6 +2133,17 @@
       "actually_done": "Connected POC device & tested camera view on belt. Identified camera angle/resolution fixes & downward lighting needs. Agreed with Eng. Hamdy to fabricate background cover.",
       "comments": "Electropi & Eng. Hamdy aligned on 80% background cover to isolate AI vision model training without restricting operator workflow.",
       "type": "Primary"
+    },
+    {
+      "id": 18,
+      "project_id": 1,
+      "project_name": "Tread Barcode Scan",
+      "date": "2026-07-29",
+      "engineer": "Mazen",
+      "planned_today": null,
+      "actually_done": "Worked on the Tread scanning Dashboard adding Last scanned code and time of Last scanned code \n-\nAdded raw data for easy traceability ",
+      "comments": null,
+      "type": "Primary"
     }
   ]
 }
