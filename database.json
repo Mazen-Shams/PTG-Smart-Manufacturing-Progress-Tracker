@@ -122,7 +122,7 @@
       "due_date": "",
       "assigned_to": "Team",
       "latest_update": "Camera Belt Line-of-Sight & Lighting Assessment",
-      "next_step": "Initial project planning",
+      "next_step": "Background Cover / Shield Design & Fabrication",
       "blocked_by": "Eng. Hamdy (Prometeon Maintenance/SF E)",
       "notes": ""
     },
@@ -1054,8 +1054,8 @@
       "duration": 0,
       "start_date": "2026-07-16",
       "end_date": "2026-07-21",
-      "progress": 50,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": null,
       "section": "CURRENT",
       "external_dep": null
