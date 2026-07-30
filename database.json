@@ -164,7 +164,7 @@
       "due_date": null,
       "assigned_to": "Team",
       "latest_update": "Gave a PC to Ahmed Elsayed",
-      "next_step": null,
+      "next_step": "Data Collection for preventitive/predictive maintenance ",
       "blocked_by": null,
       "notes": ""
     },
@@ -1943,6 +1943,21 @@
       "status": "Not started",
       "dependencies": "s5",
       "section": "DEPLOY",
+      "external_dep": null
+    },
+    {
+      "id": 114,
+      "project_id": 13,
+      "step_code": "S2",
+      "name": "Data Collection for preventitive/predictive maintenance ",
+      "assigned_to": null,
+      "duration": 1,
+      "start_date": null,
+      "end_date": null,
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": null,
+      "section": null,
       "external_dep": null
     }
   ],
