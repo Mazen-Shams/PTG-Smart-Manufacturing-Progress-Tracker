@@ -37,8 +37,8 @@
       "start_date": "2026-06-23",
       "due_date": "",
       "assigned_to": "Team",
-      "latest_update": "Consolidate YTD Master Dataset (January - June)",
-      "next_step": "Power BI Refresh & FA Category Integration",
+      "latest_update": "Power BI Refresh & FA Category Integration",
+      "next_step": "Final Dashboard Review & Alignments",
       "blocked_by": null,
       "notes": ""
     },
@@ -829,8 +829,8 @@
       "duration": 11,
       "start_date": "2026-07-14",
       "end_date": "2026-07-25",
-      "progress": 40,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s3",
       "section": "TRIAL",
       "external_dep": null
