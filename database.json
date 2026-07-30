@@ -51,8 +51,8 @@
       "start_date": null,
       "due_date": null,
       "assigned_to": "Team",
-      "latest_update": "MAGMA Screen (PC)",
-      "next_step": "SELMA Screen (PC)",
+      "latest_update": null,
+      "next_step": "MAGMA Screen (PC)",
       "blocked_by": null,
       "notes": ""
     },
@@ -857,13 +857,13 @@
       "name": "MAGMA Screen (PC)",
       "assigned_to": "Yehia",
       "duration": 0,
-      "start_date": "2026-07-09",
-      "end_date": "2026-07-14",
+      "start_date": "",
+      "end_date": "",
       "progress": 0,
       "status": "Not started",
-      "dependencies": null,
+      "dependencies": "",
       "section": "CURRENT",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 36,
