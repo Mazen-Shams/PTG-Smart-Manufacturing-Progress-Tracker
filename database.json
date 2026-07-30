@@ -872,13 +872,13 @@
       "name": "SELMA Screen (PC)",
       "assigned_to": "Yehia",
       "duration": 0,
-      "start_date": "2026-07-09",
-      "end_date": "2026-07-14",
+      "start_date": "",
+      "end_date": "",
       "progress": 0,
       "status": "Not started",
       "dependencies": "s1",
       "section": "FUTURE",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 37,
