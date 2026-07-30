@@ -116,14 +116,14 @@
       "id": 10,
       "name": "DELTAX Ai Camera - bead coil with eng.hamdy",
       "description": "",
-      "status": "In progress",
+      "status": "On Hold",
       "priority": 9999,
       "start_date": "",
       "due_date": "",
       "assigned_to": "Team",
-      "latest_update": null,
+      "latest_update": "Camera Belt Line-of-Sight & Lighting Assessment",
       "next_step": "Initial project planning",
-      "blocked_by": null,
+      "blocked_by": "Eng. Hamdy (Prometeon Maintenance/SF E)",
       "notes": ""
     },
     {
