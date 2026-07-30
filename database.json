@@ -38,7 +38,7 @@
       "due_date": "",
       "assigned_to": "Team",
       "latest_update": "Power BI Refresh & FA Category Integration",
-      "next_step": "Final Dashboard Review & Alignments",
+      "next_step": "Final Dashboard & automated workflow",
       "blocked_by": null,
       "notes": ""
     },
@@ -839,16 +839,16 @@
       "id": 34,
       "project_id": 3,
       "step_code": "s5",
-      "name": "Final Dashboard Review & Alignments",
-      "assigned_to": "Ahmed Daoud",
+      "name": "Final Dashboard & automated workflow",
+      "assigned_to": "",
       "duration": 11,
-      "start_date": "2026-07-25",
-      "end_date": "2026-08-05",
+      "start_date": "",
+      "end_date": "",
       "progress": 50,
       "status": "In progress",
       "dependencies": "s4",
       "section": "TRIAL",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 35,
