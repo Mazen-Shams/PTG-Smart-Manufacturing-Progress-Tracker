@@ -934,8 +934,8 @@
       "duration": 0,
       "start_date": "",
       "end_date": "",
-      "progress": 0,
-      "status": "Not started",
+      "progress": 50,
+      "status": "In progress",
       "dependencies": "",
       "section": "SETUP",
       "external_dep": ""
