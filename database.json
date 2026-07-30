@@ -844,8 +844,8 @@
       "duration": 11,
       "start_date": "2026-07-25",
       "end_date": "2026-08-05",
-      "progress": 0,
-      "status": "Not started",
+      "progress": 50,
+      "status": "In progress",
       "dependencies": "s4",
       "section": "TRIAL",
       "external_dep": null
