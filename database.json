@@ -149,8 +149,8 @@
       "start_date": null,
       "due_date": null,
       "assigned_to": "Team",
-      "latest_update": "Phase 11: Final Deployment & Review",
-      "next_step": "Project nearing completion",
+      "latest_update": "Phase 10: Reporting & Analytics Dashboard",
+      "next_step": "Phase 9: Plan Calendar & Workshop Integration",
       "blocked_by": null,
       "notes": ""
     },
@@ -1189,8 +1189,8 @@
       "duration": 0,
       "start_date": "2026-07-02",
       "end_date": "2026-07-07",
-      "progress": 100,
-      "status": "Completed",
+      "progress": 50,
+      "status": "In progress",
       "dependencies": null,
       "section": "SETUP",
       "external_dep": null
