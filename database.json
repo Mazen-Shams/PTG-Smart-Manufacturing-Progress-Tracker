@@ -902,13 +902,13 @@
       "name": "Building Healthy Screen (No PC)",
       "assigned_to": "Mazen",
       "duration": 0,
-      "start_date": "2026-07-09",
-      "end_date": "2026-07-14",
+      "start_date": "",
+      "end_date": "",
       "progress": 0,
       "status": "Not started",
-      "dependencies": null,
+      "dependencies": "",
       "section": "SETUP",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 39,
