@@ -1959,6 +1959,21 @@
       "dependencies": "s1",
       "section": "FUTURE",
       "external_dep": null
+    },
+    {
+      "id": 115,
+      "project_id": 2,
+      "step_code": "s10",
+      "name": "Combined 3 Models ",
+      "assigned_to": "Nada",
+      "duration": 5,
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-06",
+      "progress": 75,
+      "status": "In progress",
+      "dependencies": "s9",
+      "section": "DEPLOY",
+      "external_dep": null
     }
   ],
   "logs": [
