@@ -2074,8 +2074,8 @@
       "end_date": "2026-08-10",
       "progress": 0,
       "status": "Not started",
-      "dependencies": null,
-      "section": null,
+      "dependencies": "",
+      "section": "DEPLOY",
       "external_dep": "ICT"
     }
   ],
