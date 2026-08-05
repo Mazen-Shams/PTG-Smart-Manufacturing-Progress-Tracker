@@ -318,8 +318,8 @@
       "due_date": null,
       "assigned_to": null,
       "latest_update": "Tags Data Logger",
-      "next_step": null,
-      "blocked_by": null
+      "next_step": "Publish Table on Dremio",
+      "blocked_by": "ICT"
     }
   ],
   "steps": [
@@ -2062,6 +2062,21 @@
       "dependencies": "",
       "section": "DEPLOY",
       "external_dep": ""
+    },
+    {
+      "id": 121,
+      "project_id": 24,
+      "step_code": "S4",
+      "name": "Publish Table on Dremio",
+      "assigned_to": "ICT",
+      "duration": 7,
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-10",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": null,
+      "section": null,
+      "external_dep": "ICT"
     }
   ],
   "logs": [
