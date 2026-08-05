@@ -748,7 +748,7 @@
     {
       "id": 28,
       "project_id": 2,
-      "step_code": "s10",
+      "step_code": "s11",
       "name": "App Dev & Optimization",
       "assigned_to": "Nada",
       "duration": 14,
@@ -756,7 +756,7 @@
       "end_date": "2026-08-20",
       "progress": 0,
       "status": "Not started",
-      "dependencies": "s9",
+      "dependencies": "s10",
       "section": "DEPLOY",
       "external_dep": ""
     },
