@@ -1996,14 +1996,14 @@
       "step_code": "s7",
       "name": "Performance & Action Insights Imp",
       "assigned_to": "Nada",
-      "duration": 7,
-      "start_date": "2026-07-30",
+      "duration": 6,
+      "start_date": "2026-07-31",
       "end_date": "2026-08-06",
       "progress": 100,
       "status": "Completed",
       "dependencies": "s6",
-      "section": null,
-      "external_dep": null
+      "section": "",
+      "external_dep": ""
     }
   ],
   "logs": [
