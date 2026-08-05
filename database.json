@@ -303,7 +303,7 @@
       "start_date": "2026-07-20",
       "due_date": "2026-08-10",
       "assigned_to": "Team",
-      "latest_update": "Build Grafana Panel & Shift Filter",
+      "latest_update": "1st Review",
       "next_step": "Business Requirements definition",
       "blocked_by": null,
       "notes": ""
@@ -1639,8 +1639,8 @@
       "duration": 1,
       "start_date": "2026-07-30",
       "end_date": "2026-07-30",
-      "progress": 0,
-      "status": "Not started",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s5",
       "section": "Handoff",
       "external_dep": ""
