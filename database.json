@@ -2055,13 +2055,13 @@
       "name": "Tags Data Logger",
       "assigned_to": "Nada",
       "duration": 1,
-      "start_date": null,
-      "end_date": null,
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-03",
       "progress": 100,
       "status": "Completed",
-      "dependencies": null,
-      "section": null,
-      "external_dep": null
+      "dependencies": "",
+      "section": "",
+      "external_dep": ""
     }
   ],
   "logs": [
