@@ -1978,7 +1978,7 @@
     {
       "id": 116,
       "project_id": 23,
-      "step_code": "s7",
+      "step_code": "s8",
       "name": "Data Validation",
       "assigned_to": "Team",
       "duration": 7,
@@ -1988,7 +1988,7 @@
       "status": "In progress",
       "dependencies": "s6",
       "section": "Handoff",
-      "external_dep": null
+      "external_dep": ""
     }
   ],
   "logs": [
