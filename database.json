@@ -317,8 +317,8 @@
       "start_date": "2026-08-03",
       "due_date": null,
       "assigned_to": null,
-      "latest_update": "Kickoff & Planning",
-      "next_step": "Requirements Definition",
+      "latest_update": "Requirements Definition",
+      "next_step": null,
       "blocked_by": null
     }
   ],
@@ -2039,14 +2039,14 @@
       "step_code": "s2",
       "name": "Requirements Definition",
       "assigned_to": "Team",
-      "duration": 5,
-      "start_date": "2026-08-07",
-      "end_date": "2026-08-12",
-      "progress": 0,
-      "status": "Not started",
+      "duration": 6,
+      "start_date": "2026-07-28",
+      "end_date": "2026-08-03",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s1",
       "section": "SETUP",
-      "external_dep": null
+      "external_dep": ""
     }
   ],
   "logs": [
