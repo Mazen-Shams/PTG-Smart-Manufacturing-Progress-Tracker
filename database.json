@@ -739,8 +739,8 @@
       "duration": 4,
       "start_date": "2026-07-30",
       "end_date": "2026-08-03",
-      "progress": 0,
-      "status": "Not started",
+      "progress": 50,
+      "status": "In progress",
       "dependencies": "s8",
       "section": "DEPLOY",
       "external_dep": ""
