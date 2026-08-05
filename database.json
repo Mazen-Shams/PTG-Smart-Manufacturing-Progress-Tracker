@@ -2060,7 +2060,7 @@
       "progress": 100,
       "status": "Completed",
       "dependencies": "",
-      "section": "",
+      "section": "DEPLOY",
       "external_dep": ""
     }
   ],
