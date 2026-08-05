@@ -1695,15 +1695,15 @@
       "project_id": 23,
       "step_code": "s4",
       "name": "Implement scrap Query",
-      "assigned_to": null,
-      "duration": 1,
+      "assigned_to": "",
+      "duration": 5,
       "start_date": "2026-07-22",
-      "end_date": "2026-07-23",
+      "end_date": "2026-07-27",
       "progress": 100,
       "status": "Completed",
-      "dependencies": null,
+      "dependencies": "",
       "section": "Query.Dev",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 99,
