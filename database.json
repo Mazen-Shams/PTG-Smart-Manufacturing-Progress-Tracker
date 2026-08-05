@@ -317,7 +317,7 @@
       "start_date": "2026-08-03",
       "due_date": null,
       "assigned_to": null,
-      "latest_update": "Requirements Definition",
+      "latest_update": "Tags Data Logger",
       "next_step": null,
       "blocked_by": null
     }
@@ -2047,6 +2047,21 @@
       "dependencies": "s1",
       "section": "SETUP",
       "external_dep": ""
+    },
+    {
+      "id": 120,
+      "project_id": 24,
+      "step_code": "s3",
+      "name": "Tags Data Logger",
+      "assigned_to": "Nada",
+      "duration": 1,
+      "start_date": null,
+      "end_date": null,
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": null,
+      "section": null,
+      "external_dep": null
     }
   ],
   "logs": [
