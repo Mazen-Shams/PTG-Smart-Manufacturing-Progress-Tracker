@@ -1974,6 +1974,21 @@
       "dependencies": "s9",
       "section": "DEPLOY",
       "external_dep": null
+    },
+    {
+      "id": 116,
+      "project_id": 23,
+      "step_code": "s7",
+      "name": "Data Validation",
+      "assigned_to": "Team",
+      "duration": 7,
+      "start_date": "2026-08-06",
+      "end_date": "2026-08-13",
+      "progress": 50,
+      "status": "In progress",
+      "dependencies": "s6",
+      "section": "Handoff",
+      "external_dep": null
     }
   ],
   "logs": [
