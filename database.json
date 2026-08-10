@@ -79,8 +79,8 @@
       "start_date": "2026-06-25",
       "due_date": "2026-08-25",
       "assigned_to": "Mazen",
-      "latest_update": "100% Thingworx Parity achieved for 26 machine lines (status colors, active barcode, current/next material, shift total prod, prev cycle time & main/aux operators). OEE queries currently in progress.",
-      "next_step": "Implement Machine OEE queries & Rolling Average Cycle Time",
+      "latest_update": "Main/Auxiliary drum operator parsing & 26-line status card parity",
+      "next_step": "Machine OEE",
       "blocked_by": null,
       "notes": "Grafana environment located at Desktop\\\\(API) Grafana Dashboards\\\\On Development\\\\Building Manager. Dremio SQL query performance optimized from 32s to 1s using direct 3-day partitioned DC_LOGINS joins. OEE queries currently in progress."
     },
@@ -2157,16 +2157,16 @@
       "id": 127,
       "project_id": 6,
       "step_code": "s6",
-      "name": "Machine OEE queries & rolling average cycle time integration",
+      "name": "Machine OEE",
       "assigned_to": "Mazen",
       "duration": 15,
-      "start_date": "2026-07-29",
-      "end_date": "2026-08-20",
+      "start_date": "",
+      "end_date": "",
       "progress": 50,
       "status": "In progress",
       "dependencies": "s5",
       "section": "CURRENT",
-      "external_dep": null
+      "external_dep": ""
     }
   ],
   "logs": [
