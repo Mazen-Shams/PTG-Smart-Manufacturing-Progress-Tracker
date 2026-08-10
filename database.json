@@ -37,8 +37,8 @@
       "start_date": "2026-06-23",
       "due_date": "2026-08-25",
       "assigned_to": "Mazen / Ahmed Daoud",
-      "latest_update": "Option A Web Portal Deployed (<0.9s reconciliation, Portable Python, drag & drop upload, interactive Requester Mapping manager, matrix table popup filters & Power BI PBIP).",
-      "next_step": "Eng. Ahmed Daoud Verification (Unmapped Discipline Function & Target vs Actual Budget Layer)",
+      "latest_update": "Matrix Table Filtering, Sorting & Execution Log Stream",
+      "next_step": "Eng. Ahmed Daoud Verification (Unmapped Discipline & Target Budget Layer)",
       "blocked_by": null,
       "notes": "Workspace at Desktop\\\\maintenance costs. Includes START_OPTION_A_PORTAL.bat running on http://localhost:8500 with zero-install Portable Python. Reconciles 3,572 rows in 0.9s. Awaiting target spending budget layer from Ahmed Daoud."
     },
@@ -2175,13 +2175,13 @@
       "name": "Eng. Ahmed Daoud Verification (Unmapped Discipline & Target Budget Layer)",
       "assigned_to": "Ahmed Daoud / Mazen",
       "duration": 14,
-      "start_date": "2026-08-06",
-      "end_date": "2026-08-20",
-      "progress": 60,
+      "start_date": "",
+      "end_date": "",
+      "progress": 0,
       "status": "In progress",
       "dependencies": "s5",
       "section": "CURRENT",
-      "external_dep": null
+      "external_dep": ""
     }
   ],
   "logs": [
