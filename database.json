@@ -129,16 +129,16 @@
     {
       "id": 11,
       "name": "DMA Ahmed Yehia",
-      "description": "",
-      "status": "In progress",
-      "priority": 9999,
-      "start_date": null,
-      "due_date": null,
-      "assigned_to": "Team",
-      "latest_update": null,
-      "next_step": "Initial project planning",
+      "description": "Automated Metravib DMA laboratory data processing suite & crosscheck study for Egypt R&D (Eng. Ahmed Yehia & Eng. Rasha Hussien).",
+      "status": "Completed",
+      "priority": 11,
+      "start_date": "2026-07-16",
+      "due_date": "2026-08-10",
+      "assigned_to": "Mazen",
+      "latest_update": "Deployed 100% offline Web Tool & Python Batch Pipeline (Pa->MPa conversion, pd.melt unpivoting, 9-point deduplication, 27 raw files consolidated).",
+      "next_step": "Egypt R&D Lab User Trial & Continuous Dataset Ingestion",
       "blocked_by": null,
-      "notes": ""
+      "notes": "Delivered standalone offline HTML app (Prometeon_DMA_Lab_Data_Processor.html) and pandas script (process_egypt_dma.py) in Desktop\\\\1GO673A-30-DMA script folder. Consolidated 27 raw lab test files into DMA_EGYPT_CONSOLIDATED_DATA.xlsx."
     },
     {
       "id": 12,
@@ -1059,36 +1059,6 @@
       "external_dep": null
     },
     {
-      "id": 53,
-      "project_id": 11,
-      "step_code": "s1",
-      "name": "Initial project planning",
-      "assigned_to": "Team",
-      "duration": 0,
-      "start_date": "2026-07-16",
-      "end_date": "2026-07-21",
-      "progress": 50,
-      "status": "In progress",
-      "dependencies": null,
-      "section": "CURRENT",
-      "external_dep": null
-    },
-    {
-      "id": 54,
-      "project_id": 11,
-      "step_code": "s2",
-      "name": "Requirements definition",
-      "assigned_to": "Team",
-      "duration": 0,
-      "start_date": "2026-07-21",
-      "end_date": "2026-07-26",
-      "progress": 0,
-      "status": "Not started",
-      "dependencies": "s1",
-      "section": "FUTURE",
-      "external_dep": null
-    },
-    {
       "id": 55,
       "project_id": 12,
       "step_code": "s1",
@@ -1734,21 +1704,6 @@
       "external_dep": null
     },
     {
-      "id": 101,
-      "project_id": 11,
-      "step_code": "s3",
-      "name": "Inspect the sent CSV by Eng.Ahmed yehia's",
-      "assigned_to": "Mazen",
-      "duration": 1,
-      "start_date": "",
-      "end_date": "",
-      "progress": 25,
-      "status": "In progress",
-      "dependencies": "",
-      "section": "",
-      "external_dep": ""
-    },
-    {
       "id": 107,
       "project_id": 9,
       "step_code": "s0",
@@ -2077,6 +2032,81 @@
       "dependencies": "",
       "section": "DEPLOY",
       "external_dep": "ICT"
+    },
+    {
+      "id": 53,
+      "project_id": 11,
+      "step_code": "s1",
+      "name": "Initial requirements & Murat DMA spec review",
+      "assigned_to": "Mazen",
+      "duration": 5,
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-21",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": null,
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 54,
+      "project_id": 11,
+      "step_code": "s2",
+      "name": "Develop Python processing pipeline (process_egypt_dma.py)",
+      "assigned_to": "Mazen",
+      "duration": 5,
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-26",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s1",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 101,
+      "project_id": 11,
+      "step_code": "s3",
+      "name": "Build 100% offline Web App (Prometeon_DMA_Lab_Data_Processor.html)",
+      "assigned_to": "Mazen",
+      "duration": 7,
+      "start_date": "2026-07-26",
+      "end_date": "2026-08-02",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s2",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 122,
+      "project_id": 11,
+      "step_code": "s4",
+      "name": "Consolidate 27 raw lab files & Izmit/Egypt crosscheck study",
+      "assigned_to": "Mazen",
+      "duration": 5,
+      "start_date": "2026-08-02",
+      "end_date": "2026-08-07",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s3",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 123,
+      "project_id": 11,
+      "step_code": "s5",
+      "name": "Handover & User Onboarding (Ahmed Yehia & Rasha Hussien)",
+      "assigned_to": "Mazen",
+      "duration": 3,
+      "start_date": "2026-08-07",
+      "end_date": "2026-08-10",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s4",
+      "section": "CURRENT",
+      "external_dep": null
     }
   ],
   "logs": [
@@ -2277,6 +2307,39 @@
       "actually_done": "Worked on the Tread scanning Dashboard adding Last scanned code and time of Last scanned code \n-\nAdded raw data for easy traceability ",
       "comments": null,
       "type": "Primary"
+    },
+    {
+      "project_id": 11,
+      "project_name": "DMA Ahmed Yehia",
+      "date": "2026-07-26",
+      "engineer": "Mazen",
+      "planned_today": "Develop Python automated pipeline for Metravib DMA files",
+      "actually_done": "Yes",
+      "comments": "Built process_egypt_dma.py with pandas/openpyxl for metadata extraction, Pa->MPa modulus conversion, pd.melt unpivoting, and 9-point composite deduplication.",
+      "type": "Primary",
+      "id": 19
+    },
+    {
+      "project_id": 11,
+      "project_name": "DMA Ahmed Yehia",
+      "date": "2026-08-02",
+      "engineer": "Mazen",
+      "planned_today": "Build standalone offline Web Tool for R&D lab team",
+      "actually_done": "Yes",
+      "comments": "Created Prometeon_DMA_Lab_Data_Processor.html (0.0s instant open, SheetJS engine, Prometeon theme, interactive Excel popup filtering & sorting).",
+      "type": "Primary",
+      "id": 20
+    },
+    {
+      "project_id": 11,
+      "project_name": "DMA Ahmed Yehia",
+      "date": "2026-08-07",
+      "engineer": "Mazen",
+      "planned_today": "Consolidate Egypt DMA lab dataset and crosscheck study",
+      "actually_done": "Yes",
+      "comments": "Processed 27 raw lab files into DMA_EGYPT_CONSOLIDATED_DATA.xlsx and analyzed Ahmed Yehia's Izmit vs. Egypt curing crosscheck study.",
+      "type": "Primary",
+      "id": 21
     }
   ]
 }
