@@ -205,7 +205,7 @@
       "start_date": null,
       "due_date": null,
       "assigned_to": "Team",
-      "latest_update": "Review",
+      "latest_update": "Live Test Deployment",
       "next_step": "Trial Test - New Text Format",
       "blocked_by": null,
       "notes": ""
@@ -2182,6 +2182,21 @@
       "dependencies": "s5",
       "section": "CURRENT",
       "external_dep": ""
+    },
+    {
+      "id": 129,
+      "project_id": 16,
+      "step_code": "s9",
+      "name": "Live Test Deployment",
+      "assigned_to": null,
+      "duration": 1,
+      "start_date": "2026-08-13",
+      "end_date": "2026-08-13",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": null,
+      "section": null,
+      "external_dep": null
     }
   ],
   "logs": [
