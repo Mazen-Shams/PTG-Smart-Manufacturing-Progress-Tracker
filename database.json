@@ -23,8 +23,8 @@
       "start_date": null,
       "due_date": null,
       "assigned_to": "Team",
-      "latest_update": "Object Detection Training",
-      "next_step": "Calibration",
+      "latest_update": "Combined 3 Models ",
+      "next_step": "App Dev & Optimization",
       "blocked_by": null,
       "notes": ""
     },
@@ -737,8 +737,8 @@
       "duration": 14,
       "start_date": "2026-07-15",
       "end_date": "2026-07-29",
-      "progress": 50,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s7",
       "section": "DEPLOY",
       "external_dep": ""
@@ -752,8 +752,8 @@
       "duration": 4,
       "start_date": "2026-07-30",
       "end_date": "2026-08-03",
-      "progress": 75,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s8",
       "section": "DEPLOY",
       "external_dep": ""
@@ -1832,8 +1832,8 @@
       "duration": 5,
       "start_date": "2026-08-01",
       "end_date": "2026-08-06",
-      "progress": 75,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s9",
       "section": "DEPLOY",
       "external_dep": null
