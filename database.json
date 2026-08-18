@@ -206,7 +206,7 @@
       "due_date": null,
       "assigned_to": "Team",
       "latest_update": "Live Test Deployment",
-      "next_step": null,
+      "next_step": "Trial Test - New Text Format",
       "blocked_by": null,
       "notes": ""
     },
@@ -1427,8 +1427,8 @@
       "duration": 24,
       "start_date": "2026-07-20",
       "end_date": "2026-08-13",
-      "progress": 100,
-      "status": "Completed",
+      "progress": 50,
+      "status": "On Hold",
       "dependencies": "",
       "section": "Prototype",
       "external_dep": ""
