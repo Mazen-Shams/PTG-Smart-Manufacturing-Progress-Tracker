@@ -2197,6 +2197,21 @@
       "dependencies": null,
       "section": null,
       "external_dep": null
+    },
+    {
+      "id": 130,
+      "project_id": 23,
+      "step_code": "s9",
+      "name": "Final Review & Submission",
+      "assigned_to": "Nada",
+      "duration": 7,
+      "start_date": "2026-08-13",
+      "end_date": "2026-08-20",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": null,
+      "section": null,
+      "external_dep": null
     }
   ],
   "logs": [
