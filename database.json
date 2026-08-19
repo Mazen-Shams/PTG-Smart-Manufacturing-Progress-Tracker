@@ -303,7 +303,7 @@
       "start_date": "2026-07-20",
       "due_date": "2026-08-10",
       "assigned_to": "Team",
-      "latest_update": "Performance & Action Insights Imp",
+      "latest_update": "Data Validation",
       "next_step": "Business Requirements definition",
       "blocked_by": null,
       "notes": ""
@@ -1847,8 +1847,8 @@
       "duration": 7,
       "start_date": "2026-08-06",
       "end_date": "2026-08-13",
-      "progress": 50,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s6",
       "section": "Handoff",
       "external_dep": ""
