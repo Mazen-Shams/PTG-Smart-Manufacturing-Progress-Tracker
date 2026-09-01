@@ -9,9 +9,9 @@
       "start_date": "2026-06-12",
       "due_date": "",
       "assigned_to": "Team",
-      "latest_update": "Dremio Camera Log Sync & IT Stored Procedure Integration",
-      "next_step": "Handheld Scanner Operator Deployment (Mch 9 only)",
-      "blocked_by": "Operations",
+      "latest_update": "Handheld Scanner Operator Deployment (Mch 9 only)",
+      "next_step": null,
+      "blocked_by": null,
       "notes": "Fleet expansion was canceled to focus 100% on Machine 9 operational stability. Mch 9 camera & Kepware verified. Dremio sync logged with IT (@Osman, @Nabil)."
     },
     {
@@ -643,8 +643,8 @@
       "duration": 0,
       "start_date": "",
       "end_date": "",
-      "progress": 0,
-      "status": "Not started",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s18",
       "section": "DEPLOY",
       "external_dep": "Operations"
