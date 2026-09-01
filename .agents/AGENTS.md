@@ -34,3 +34,4 @@ Welcome, Agent! This file outlines critical guidelines and architectural constra
    - Prometeon main logo is `logo.png` (left navbar brand image).
    - Prometeon P symbol badge mark is `p_logo.png` (right user profile badge image and favicon).
 7. **Sync Button:** The `🔄` button (`#manual-sync-btn`) in the navbar uses `.settings-btn` styling. The `.syncing` class adds a spin animation. Do not duplicate or relocate this element.
+8. **Future Tasks Dates Policy:** For future / unstarted milestone steps or project deadlines, do NOT set speculative start dates or end dates (keep `start_date: ""` and `end_date: ""` with `duration: 0` unless specifically instructed by the user). Avoid putting premature date commitments on future roadmap tasks.
