@@ -35,12 +35,12 @@
       "status": "In progress",
       "priority": 3,
       "start_date": "2026-06-23",
-      "due_date": "2026-08-25",
+      "due_date": "",
       "assigned_to": "Mazen / Ahmed Daoud",
-      "latest_update": "Matrix Table Filtering, Sorting & Execution Log Stream",
-      "next_step": "Eng. Ahmed Daoud Verification (Unmapped Discipline & Target Budget Layer)",
-      "blocked_by": null,
-      "notes": "Workspace at Desktop\\\\maintenance costs. Includes START_OPTION_A_PORTAL.bat running on http://localhost:8500 with zero-install Portable Python. Reconciles 3,572 rows in 0.9s. Awaiting target spending budget layer from Ahmed Daoud."
+      "latest_update": "2026 YTD Master dataset compiled (3,572 rows), reconciliation guide authored & ICT alignment submitted",
+      "next_step": "Eng. Ahmed Daoud Target Spending budget layer & RDP co-location deployment",
+      "blocked_by": "Target Budget Table (Eng. Ahmed Daoud)",
+      "notes": "Workspace at Desktop\\maintenance costs. Reconciles SAP + Controlling in <0.9s via Calamine. Portal runs HTTPS on port 8500. IT correspondence documented in IT_COMMUNICATION.md."
     },
     {
       "id": 4,
@@ -2200,15 +2200,15 @@
       "id": 128,
       "project_id": 3,
       "step_code": "s6",
-      "name": "Eng. Ahmed Daoud Verification (Unmapped Discipline & Target Budget Layer)",
+      "name": "Eng. Ahmed Daoud Verification & Master YTD Compilation Guide",
       "assigned_to": "Ahmed Daoud / Mazen",
-      "duration": 0,
-      "start_date": "",
-      "end_date": "",
-      "progress": 0,
-      "status": "In progress",
+      "duration": 18,
+      "start_date": "2026-08-06",
+      "end_date": "2026-08-24",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s5",
-      "section": "CURRENT",
+      "section": "PAST",
       "external_dep": ""
     },
     {
@@ -2448,6 +2448,51 @@
       "progress": 0,
       "status": "Not started",
       "dependencies": "s6",
+      "section": "FUTURE",
+      "external_dep": "Maintenance Unit"
+    },
+    {
+      "id": 145,
+      "project_id": 3,
+      "step_code": "s7",
+      "name": "ICT Department Alignment & GL/Cost Center Technical Review",
+      "assigned_to": "Mazen / Marina Fouad",
+      "duration": 2,
+      "start_date": "2026-08-25",
+      "end_date": "2026-08-27",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s6",
+      "section": "PAST",
+      "external_dep": "ICT Department"
+    },
+    {
+      "id": 146,
+      "project_id": 3,
+      "step_code": "s8",
+      "name": "Target Spending Budget Variance Layer & RDP Server Deployment",
+      "assigned_to": "Ahmed Daoud / Mazen",
+      "duration": 0,
+      "start_date": "2026-08-28",
+      "end_date": "",
+      "progress": 50,
+      "status": "In progress",
+      "dependencies": "s7",
+      "section": "CURRENT",
+      "external_dep": "Controlling / ICT"
+    },
+    {
+      "id": 147,
+      "project_id": 3,
+      "step_code": "s9",
+      "name": "Plant Maintenance Engineering Team Rollout & Training",
+      "assigned_to": "Mazen / Ahmed Daoud",
+      "duration": 0,
+      "start_date": "",
+      "end_date": "",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s8",
       "section": "FUTURE",
       "external_dep": "Maintenance Unit"
     }
@@ -2814,6 +2859,28 @@
       "planned_today": "Build responsive mobile web app with HTTPS camera capture and WhatsApp integration",
       "actually_done": "Yes",
       "comments": "Built FastAPI backend with SAN SSL certificates for mobile browser camera access. Created Prometeon corporate UI with SVG polygon overlays and 1-tap WhatsApp sharing.",
+      "type": "Primary"
+    },
+    {
+      "id": 34,
+      "project_id": 3,
+      "project_name": "Maintenance Cost",
+      "date": "2026-08-24",
+      "engineer": "Mazen",
+      "planned_today": "Compile 2026 YTD Master Dataset and author comprehensive reconciliation guide",
+      "actually_done": "Yes",
+      "comments": "Compiled Year 2026 YTD Compiled.xlsx (3,572 rows) and published reconciliation_compilation_guide.md detailing SAP vs Controlling precedence and Accrual/FA mechanics.",
+      "type": "Primary"
+    },
+    {
+      "id": 35,
+      "project_id": 3,
+      "project_name": "Maintenance Cost",
+      "date": "2026-08-25",
+      "engineer": "Mazen",
+      "planned_today": "Align with ICT department and prepare technical GL/Cost Center specifications",
+      "actually_done": "Yes",
+      "comments": "Shared verified GL accounts and Cost Centers with Eng. Marina Fouad & Tareq Moustafa; proposed portable zero-install hosting on RDP machine EGAD-XMAGNUAA1I.",
       "type": "Primary"
     }
   ]
