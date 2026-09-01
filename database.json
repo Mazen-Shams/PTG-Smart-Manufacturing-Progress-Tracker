@@ -199,16 +199,16 @@
     {
       "id": 16,
       "name": "Technical Support Ai Agent",
-      "description": "",
+      "description": "AI technical support assistant for plant operators & maintenance engineers with ChromaDB vector search and Enterprise Gemini LLM model integration.",
       "status": "In progress",
-      "priority": 9999,
+      "priority": 6,
       "start_date": null,
-      "due_date": null,
-      "assigned_to": "Team",
-      "latest_update": "Live Test Deployment",
-      "next_step": "Trial Test - New Text Format",
-      "blocked_by": null,
-      "notes": ""
+      "due_date": "",
+      "assigned_to": "Nada / Mazen / Noha",
+      "latest_update": "Enterprise Gemini API key received; HQ IP allowlisting in progress & manuals handed over",
+      "next_step": "HQ network IP allowlisting verification & weekly alignment meeting with Noha",
+      "blocked_by": "HQ IT (IP Allowlisting for Gemini API)",
+      "notes": "Workspace at Desktop\\Tech support Chatbot. Review completed with Ali, Ramy, Metwally and operators. Noha coordinating with HQ for API key binding."
     },
     {
       "id": 17,
@@ -1450,16 +1450,16 @@
       "id": 88,
       "project_id": 16,
       "step_code": "s8",
-      "name": "Trial Test - New Text Format",
-      "assigned_to": "Team",
-      "duration": 0,
+      "name": "Review with Ali, Ramy, Metwally & Operators (Manuals Handover)",
+      "assigned_to": "Ali / Ramy / Metwally / Nada",
+      "duration": 25,
       "start_date": "2026-07-20",
-      "end_date": "",
-      "progress": 50,
-      "status": "On Hold",
-      "dependencies": "",
-      "section": "Prototype",
-      "external_dep": ""
+      "end_date": "2026-08-14",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s7",
+      "section": "PAST",
+      "external_dep": "Maintenance & Operations"
     },
     {
       "id": 89,
@@ -2215,16 +2215,16 @@
       "id": 129,
       "project_id": 16,
       "step_code": "s9",
-      "name": "Live Test Deployment",
-      "assigned_to": null,
-      "duration": 1,
-      "start_date": "2026-08-13",
-      "end_date": "2026-08-13",
-      "progress": 100,
-      "status": "Completed",
-      "dependencies": null,
-      "section": null,
-      "external_dep": null
+      "name": "Enterprise Gemini API Key Acquisition & HQ IP Allowlisting",
+      "assigned_to": "Noha / HQ IT",
+      "duration": 0,
+      "start_date": "2026-08-20",
+      "end_date": "",
+      "progress": 50,
+      "status": "In progress",
+      "dependencies": "s8",
+      "section": "CURRENT",
+      "external_dep": "HQ IT / Noha"
     },
     {
       "id": 130,
@@ -2495,6 +2495,21 @@
       "dependencies": "s8",
       "section": "FUTURE",
       "external_dep": "Maintenance Unit"
+    },
+    {
+      "id": 148,
+      "project_id": 16,
+      "step_code": "s10",
+      "name": "Weekly HQ Alignment Meeting & Gemini Model Integration",
+      "assigned_to": "Nada / Noha",
+      "duration": 0,
+      "start_date": "",
+      "end_date": "",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s9",
+      "section": "FUTURE",
+      "external_dep": "Noha / HQ IT"
     }
   ],
   "logs": [
@@ -2881,6 +2896,28 @@
       "planned_today": "Align with ICT department and prepare technical GL/Cost Center specifications",
       "actually_done": "Yes",
       "comments": "Shared verified GL accounts and Cost Centers with Eng. Marina Fouad & Tareq Moustafa; proposed portable zero-install hosting on RDP machine EGAD-XMAGNUAA1I.",
+      "type": "Primary"
+    },
+    {
+      "id": 36,
+      "project_id": 16,
+      "project_name": "Technical Support Ai Agent",
+      "date": "2026-08-14",
+      "engineer": "Nada",
+      "planned_today": "Conduct review with Ali, Ramy, Metwally and operators, and hand over technical manuals",
+      "actually_done": "Yes",
+      "comments": "Completed feedback review session with maintenance engineers & operators. Handed over technical manuals archive to Noha for enterprise Gemini RAG ingestion.",
+      "type": "Primary"
+    },
+    {
+      "id": 37,
+      "project_id": 16,
+      "project_name": "Technical Support Ai Agent",
+      "date": "2026-08-28",
+      "engineer": "Nada",
+      "planned_today": "Coordinate enterprise Gemini API key access and HQ network configuration",
+      "actually_done": "Yes",
+      "comments": "Noha received enterprise Gemini API key. Coordinating with HQ for network IP allowlisting. Open timeline pending HQ network binding with weekly follow-up meetings.",
       "type": "Primary"
     }
   ]
