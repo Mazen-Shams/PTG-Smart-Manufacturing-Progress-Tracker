@@ -34,4 +34,6 @@ Welcome, Agent! This file outlines critical guidelines and architectural constra
    - Prometeon main logo is `logo.png` (left navbar brand image).
    - Prometeon P symbol badge mark is `p_logo.png` (right user profile badge image and favicon).
 7. **Sync Button:** The `🔄` button (`#manual-sync-btn`) in the navbar uses `.settings-btn` styling. The `.syncing` class adds a spin animation. Do not duplicate or relocate this element.
-8. **Future Tasks Dates Policy:** For future / unstarted milestone steps or project deadlines, do NOT set speculative start dates or end dates (keep `start_date: ""` and `end_date: ""` with `duration: 0` unless specifically instructed by the user). Avoid putting premature date commitments on future roadmap tasks.
+8. **Task Dates & Commitments Policy:**
+   - **Future / Unstarted Tasks:** For future or unstarted milestone steps (`status: "Not started"`, `progress: 0%`, or `section: "FUTURE"`), do NOT set speculative start dates or end dates (keep `start_date: ""` and `end_date: ""` with `duration: 0` unless specifically instructed by the user).
+   - **In-Progress Tasks:** For actively ongoing tasks (`status: "In progress"` or `status: "On Hold"`), keep the actual `start_date` but do NOT set an `end_date` (keep `end_date: ""` with `duration: 0`) to clearly signify that work is actively in flight without premature completion promises.

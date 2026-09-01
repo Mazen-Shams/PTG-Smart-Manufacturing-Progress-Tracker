@@ -100,7 +100,8 @@ GitHub Pages was activated on the repository to deploy from the `/ (root)` folde
 
 ---
 
-## 📅 Roadmap & Future Tasks Date Policy
+## 📅 Roadmap & Tasks Date Policy
 To avoid setting premature schedule commitments or promises:
-* **Future/Unstarted Tasks:** All milestone steps with `status: "Not started"`, `progress: 0%`, or in section `FUTURE` do **not** have speculative start or end dates (`start_date: ""` and `end_date: ""` with `duration: 0`).
-* **Active Tasks:** Start and end dates are only populated once a task is actively prioritized, scheduled, and in progress.
+* **Future / Unstarted Tasks:** All milestone steps with `status: "Not started"`, `progress: 0%`, or in section `FUTURE` do **not** have speculative start or end dates (`start_date: ""` and `end_date: ""` with `duration: 0`).
+* **In-Progress Tasks:** Active ongoing steps (`status: "In progress"` or `status: "On Hold"`) keep their initial `start_date`, but do **not** have an `end_date` (`end_date: ""` with `duration: 0`) to clearly signify that work is actively in flight.
+* **Completed Tasks:** Have verified `start_date`, `end_date`, and calculated `duration`.

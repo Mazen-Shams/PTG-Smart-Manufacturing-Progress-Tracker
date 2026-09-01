@@ -104,8 +104,8 @@ To support standard 1080p, 1360x720, and mobile screens, the app conforms to the
 
 ---
 
-## 📅 7. Future Tasks & Roadmap Date Policy
-To avoid putting premature date commitments or promises on unstarted roadmap initiatives:
-1. **No Speculative Dates:** All future / planned / unstarted milestone steps (`status: "Not started"`, `progress: 0%`, or `section: "FUTURE"`) MUST NOT have speculative start or end dates.
-2. **Standard Values:** Store `start_date: ""` and `end_date: ""` with `duration: 0` in `database.json` until work is officially scheduled and underway.
-3. **New Project Ingestion:** When creating new projects or adding future steps, leave start and end dates empty by default unless explicit firm dates are provided by the user.
+## 📅 7. Tasks & Roadmap Date Policy
+To avoid putting premature date commitments or promises on roadmap initiatives:
+1. **Future / Unstarted Tasks:** All future / planned / unstarted milestone steps (`status: "Not started"`, `progress: 0%`, or `section: "FUTURE"`) MUST NOT have speculative start or end dates (`start_date: ""` and `end_date: ""` with `duration: 0`).
+2. **In-Progress Tasks:** All actively ongoing tasks (`status: "In progress"` or `status: "On Hold"`) maintain their initial `start_date`, but MUST NOT have an `end_date` (store `end_date: ""` with `duration: 0`) to clearly communicate that work is actively in flight without an arbitrary pre-committed deadline.
+3. **Completed Tasks:** Retain both confirmed `start_date` and confirmed `end_date` with calculated `duration`.
