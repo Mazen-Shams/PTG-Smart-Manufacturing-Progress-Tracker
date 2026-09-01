@@ -10,8 +10,8 @@
       "due_date": "",
       "assigned_to": "Team",
       "latest_update": "KEPServerEX Signal Standardization & Link Tags (Mch 2, 3, 9, 12, 22)",
-      "next_step": "Camera IP Wireless Network Access Configuration",
-      "blocked_by": "IT / Network",
+      "next_step": "Dremio Camera Log Sync & IT Stored Procedure Integration",
+      "blocked_by": "IT",
       "notes": "Fleet expansion was canceled to focus 100% on Machine 9 operational stability. Mch 9 camera & Kepware verified. Dremio sync logged with IT (@Osman, @Nabil)."
     },
     {
@@ -598,8 +598,8 @@
       "duration": 4,
       "start_date": "2026-07-23",
       "end_date": "2026-07-27",
-      "progress": 25,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s14",
       "section": "DEPLOY",
       "external_dep": "IT / Network"
