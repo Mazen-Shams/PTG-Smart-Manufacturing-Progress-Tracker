@@ -97,3 +97,10 @@ git remote set-url origin https://github.com/Mazen-Shams/PTG-Smart-Manufacturing
 
 ### Step 5: Enabling GitHub Pages
 GitHub Pages was activated on the repository to deploy from the `/ (root)` folder of the `main` branch, making the Single Page Application instantly available on the web.
+
+---
+
+## 📅 Roadmap & Future Tasks Date Policy
+To avoid setting premature schedule commitments or promises:
+* **Future/Unstarted Tasks:** All milestone steps with `status: "Not started"`, `progress: 0%`, or in section `FUTURE` do **not** have speculative start or end dates (`start_date: ""` and `end_date: ""` with `duration: 0`).
+* **Active Tasks:** Start and end dates are only populated once a task is actively prioritized, scheduled, and in progress.

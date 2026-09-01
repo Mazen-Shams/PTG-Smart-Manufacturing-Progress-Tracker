@@ -101,3 +101,11 @@ To support standard 1080p, 1360x720, and mobile screens, the app conforms to the
 * **`js/app.js`:** The application controller. Directs routing, renders HTML templates, manages background sync on navigation (`triggerBackgroundSyncCheck`), wires up the manual sync button, formats UI date strings, and wires up form event listeners.
 * **`js/components.js`:** UI components. Handles toast alerts and modal show/close animations.
 * **`js/gantt.js`:** Gantt chart engine. Dynamically renders SVG timelines based on project schedule steps.
+
+---
+
+## 📅 7. Future Tasks & Roadmap Date Policy
+To avoid putting premature date commitments or promises on unstarted roadmap initiatives:
+1. **No Speculative Dates:** All future / planned / unstarted milestone steps (`status: "Not started"`, `progress: 0%`, or `section: "FUTURE"`) MUST NOT have speculative start or end dates.
+2. **Standard Values:** Store `start_date: ""` and `end_date: ""` with `duration: 0` in `database.json` until work is officially scheduled and underway.
+3. **New Project Ingestion:** When creating new projects or adding future steps, leave start and end dates empty by default unless explicit firm dates are provided by the user.
