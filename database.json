@@ -330,9 +330,9 @@
       "start_date": "2026-08-20",
       "due_date": "",
       "assigned_to": "Mazen",
-      "latest_update": "Live SQL Server logging active on LCZ_MMS ([dbo].[TestWheel_Logger]) & Dremio publishing requested",
-      "next_step": "Eng. Ahmed Osman Dremio virtual dataset confirmation & speed-synchronized Grafana dashboard panel build",
-      "blocked_by": "Dremio Publication (Eng. Ahmed Osman)",
+      "latest_update": "MS SQL Server Table Deployment & Live Logging Verification",
+      "next_step": "Dremio Virtual Dataset Publication & Access Verification",
+      "blocked_by": "ICT / Ahmed Osman",
       "notes": "Workspace at Desktop\\Indoor Kepware Data Logging. Table [dbo].[TestWheel_Logger] active with 16 FLOAT process columns + MCH + timestamp. Multi-machine architecture ready for Tianjin 1..10."
     }
   ],
@@ -2306,7 +2306,7 @@
       "id": 136,
       "project_id": 25,
       "step_code": "s6",
-      "name": "Multi-Machine Fleet Scale-Out (Tianjin 1..10 Log Groups)",
+      "name": "Multi-Machine Fleet Scale-Out (Tianjins Log Groups)",
       "assigned_to": "Mazen / Electrical Team",
       "duration": 0,
       "start_date": "",
@@ -2315,7 +2315,7 @@
       "status": "Not started",
       "dependencies": "s5",
       "section": "FUTURE",
-      "external_dep": null
+      "external_dep": ""
     },
     {
       "id": 137,
