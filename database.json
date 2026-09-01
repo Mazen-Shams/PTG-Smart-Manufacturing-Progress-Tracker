@@ -3,16 +3,16 @@
     {
       "id": 1,
       "name": "Tread Barcode Scan",
-      "description": "1",
+      "description": "Automated tread barcode reading on building machine main drum axis & CIJ recipe printing. Project scoped to Machine 9 only (Fleet expansion canceled).",
       "status": "In progress",
       "priority": 1,
       "start_date": "2026-06-12",
       "due_date": "",
       "assigned_to": "Team",
-      "latest_update": "KEPServerEX Signal Standardization & Link Tags (Mch 2, 3, 9, 12, 22)",
-      "next_step": "Camera IP Wireless Network Access Configuration",
+      "latest_update": "Fleet expansion canceled; focused strictly on Machine 9 tracing and C1 recipe printing",
+      "next_step": "Handheld scanner operator deployment (Mch 9 only) & Dremio log sync",
       "blocked_by": "IT / Network",
-      "notes": "MOM 28/7: KEPServerEX & Camera setup 100% verified for Mch 2, 3, 9, 12, 22. Dremio sync issue logged to IT (@Osman Ahmed, @Nabil Ahmed); Handheld deployment assigned to Ops (@Attia Yasser); Barcode printing assigned to Quality (@Ashraf Nada, @Khalifa Ahmed)."
+      "notes": "Fleet expansion was canceled to focus 100% on Machine 9 operational stability. Mch 9 camera & Kepware verified. Dremio sync logged with IT (@Osman, @Nabil)."
     },
     {
       "id": 2,
@@ -577,21 +577,6 @@
       "external_dep": "IT / Network"
     },
     {
-      "id": 16,
-      "project_id": 1,
-      "step_code": "s16",
-      "name": "Expansion Deployment: Remaining BU Building Machines",
-      "assigned_to": "Team / Electrical",
-      "duration": 0,
-      "start_date": "",
-      "end_date": "",
-      "progress": 0,
-      "status": "Not started",
-      "dependencies": "s15",
-      "section": "DEPLOY",
-      "external_dep": "BU Production"
-    },
-    {
       "id": 100,
       "project_id": 1,
       "step_code": "s17",
@@ -625,7 +610,7 @@
       "id": 102,
       "project_id": 1,
       "step_code": "s19",
-      "name": "Handheld Scanner Operator Deployment (Mch 2, 3, 12, 22)",
+      "name": "Handheld Scanner Operator Deployment (Mch 9 only)",
       "assigned_to": "Operations (Attia Yasser)",
       "duration": 0,
       "start_date": "",
@@ -635,21 +620,6 @@
       "dependencies": "s18",
       "section": "DEPLOY",
       "external_dep": "Operations"
-    },
-    {
-      "id": 103,
-      "project_id": 1,
-      "step_code": "s20",
-      "name": "Quality C1 Recipe Test Barcode Printing (Mch 2, 3, 9, 12, 22)",
-      "assigned_to": "Quality (Ashraf / Khalifa)",
-      "duration": 0,
-      "start_date": "",
-      "end_date": "",
-      "progress": 0,
-      "status": "Not started",
-      "dependencies": "s17",
-      "section": "DEPLOY",
-      "external_dep": "Quality"
     },
     {
       "id": 19,
