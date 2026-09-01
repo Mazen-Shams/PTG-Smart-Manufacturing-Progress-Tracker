@@ -37,9 +37,9 @@
       "start_date": "2026-06-23",
       "due_date": "",
       "assigned_to": "Mazen / Ahmed Daoud",
-      "latest_update": "2026 YTD Master dataset compiled (3,572 rows), reconciliation guide authored & ICT alignment submitted",
-      "next_step": "Eng. Ahmed Daoud Target Spending budget layer & RDP co-location deployment",
-      "blocked_by": "Target Budget Table (Eng. Ahmed Daoud)",
+      "latest_update": "ICT Department Alignment & GL/Cost Center Technical Review",
+      "next_step": "Target Spending Budget Variance Layer & RDP Server Deployment",
+      "blocked_by": "Controlling / ICT",
       "notes": "Workspace at Desktop\\maintenance costs. Reconciles SAP + Controlling in <0.9s via Calamine. Portal runs HTTPS on port 8500. IT correspondence documented in IT_COMMUNICATION.md."
     },
     {
@@ -2485,7 +2485,7 @@
       "id": 147,
       "project_id": 3,
       "step_code": "s9",
-      "name": "Plant Maintenance Engineering Team Rollout & Training",
+      "name": "Plant Maintenance Engineering Team Rollout",
       "assigned_to": "Mazen / Ahmed Daoud",
       "duration": 0,
       "start_date": "",
