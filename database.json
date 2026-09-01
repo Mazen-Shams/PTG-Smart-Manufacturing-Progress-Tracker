@@ -354,13 +354,13 @@
       "name": "RE C1 Printing Service",
       "description": "Reverse-engineering of the REA JET industrial inkjet communication protocol (REA_PI_V3.02 over TCP/IP), browser-based XML label studio (rea_label_studio.html), and standalone Python printing daemon for automated C1 recipe barcode printing.",
       "status": "In progress",
-      "priority": 9,
+      "priority": 9999,
       "start_date": "2026-08-10",
       "due_date": "",
       "assigned_to": "Mazen",
-      "latest_update": "REA_PI protocol fully decoded, XML template generator & browser label studio deployed with TCP telemetry diagnostics",
-      "next_step": "On-machine CIJ printer hardware integration testing & automated dynamic recipe trigger binding",
-      "blocked_by": null,
+      "latest_update": "Side-by-Side Verification & LabVIEW Exact Assign Parity",
+      "next_step": "C1 Physical CIJ Printer Hardware Integration & Automated Triggering",
+      "blocked_by": "Maintenance",
       "notes": "Workspace at Desktop\\RE C1 printing service. Decoded REA_PI_V3.02 commands over Wireshark. Includes rea_label_studio.html and python_printer_service."
     },
     {
