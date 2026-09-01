@@ -320,6 +320,20 @@
       "latest_update": "Tags Data Logger",
       "next_step": "Publish Table on Dremio",
       "blocked_by": "ICT"
+    },
+    {
+      "id": 25,
+      "name": "Indoor Kepware Data Logging",
+      "description": "Industrial telemetry acquisition pipeline from Siemens PLCs (DB202) via Kepware KEPServerEX to MS SQL Server (LCZ_MMS), Dremio Lakehouse exposure, and synchronized multi-panel Grafana dashboards for indoor tyre test wheel rigs.",
+      "status": "In progress",
+      "priority": 7,
+      "start_date": "2026-08-20",
+      "due_date": "2026-09-20",
+      "assigned_to": "Mazen",
+      "latest_update": "Live SQL Server logging active on LCZ_MMS ([dbo].[TestWheel_Logger]) & Dremio publishing requested",
+      "next_step": "Eng. Ahmed Osman Dremio virtual dataset confirmation & speed-synchronized Grafana dashboard panel build",
+      "blocked_by": "Dremio Publication (Eng. Ahmed Osman)",
+      "notes": "Workspace at Desktop\\Indoor Kepware Data Logging. Table [dbo].[TestWheel_Logger] active with 16 FLOAT process columns + MCH + timestamp. Multi-machine architecture ready for Tianjin 1..10."
     }
   ],
   "steps": [
@@ -2212,6 +2226,111 @@
       "dependencies": null,
       "section": null,
       "external_dep": null
+    },
+    {
+      "id": 131,
+      "project_id": 25,
+      "step_code": "s1",
+      "name": "Siemens PLC Telemetry & DB202 Offset Mapping (16 Process Tags)",
+      "assigned_to": "Mazen / Electrical",
+      "duration": 5,
+      "start_date": "2026-08-20",
+      "end_date": "2026-08-25",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": null,
+      "section": "PAST",
+      "external_dep": "Electrical"
+    },
+    {
+      "id": 132,
+      "project_id": 25,
+      "step_code": "s2",
+      "name": "Column Standardization & Data Logger Mapping Fix (DOUBLE -> FLOAT)",
+      "assigned_to": "Mazen",
+      "duration": 2,
+      "start_date": "2026-08-25",
+      "end_date": "2026-08-27",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s1",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 133,
+      "project_id": 25,
+      "step_code": "s3",
+      "name": "MS SQL Server Table Deployment & Live Logging Verification",
+      "assigned_to": "Mazen",
+      "duration": 1,
+      "start_date": "2026-08-27",
+      "end_date": "2026-08-27",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s2",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 134,
+      "project_id": 25,
+      "step_code": "s4",
+      "name": "Dremio Virtual Dataset Publication & Access Verification",
+      "assigned_to": "Ahmed Osman / Mazen",
+      "duration": 7,
+      "start_date": "2026-08-28",
+      "end_date": "2026-09-04",
+      "progress": 50,
+      "status": "In progress",
+      "dependencies": "s3",
+      "section": "CURRENT",
+      "external_dep": "ICT / Ahmed Osman"
+    },
+    {
+      "id": 135,
+      "project_id": 25,
+      "step_code": "s5",
+      "name": "Grafana Speed-Synchronized Paired Dashboards (4 Chart Pairs + Gauges)",
+      "assigned_to": "Mohamed Nada / Mazen",
+      "duration": 8,
+      "start_date": "2026-09-04",
+      "end_date": "2026-09-12",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s4",
+      "section": "FUTURE",
+      "external_dep": null
+    },
+    {
+      "id": 136,
+      "project_id": 25,
+      "step_code": "s6",
+      "name": "Multi-Machine Fleet Scale-Out (Tianjin 1..10 Log Groups)",
+      "assigned_to": "Mazen / Electrical Team",
+      "duration": 8,
+      "start_date": "2026-09-12",
+      "end_date": "2026-09-20",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s5",
+      "section": "FUTURE",
+      "external_dep": null
+    },
+    {
+      "id": 137,
+      "project_id": 25,
+      "step_code": "s7",
+      "name": "R&D Testing Team User Training & Acceptance Sign-off",
+      "assigned_to": "Mazen / Ali Mohamed",
+      "duration": 5,
+      "start_date": "2026-09-20",
+      "end_date": "2026-09-25",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s6",
+      "section": "FUTURE",
+      "external_dep": "Quality / Indoor Lab"
     }
   ],
   "logs": [
@@ -2511,6 +2630,39 @@
       "comments": "Added clickable header sorting, floating funnel popup filters with search, sticky headers, and persistent execution log modal with refresh button.",
       "type": "Primary",
       "id": 27
+    },
+    {
+      "id": 28,
+      "project_id": 25,
+      "project_name": "Indoor Kepware Data Logging",
+      "date": "2026-08-25",
+      "engineer": "Mazen",
+      "planned_today": "Map Siemens PLC DB202 telemetry addresses and standardize wide-table column schema",
+      "actually_done": "Yes",
+      "comments": "Mapped all 16 process tags from DB202 (Float32) for load, deflection, temperature, pressure and speed. Standardized column naming and stripped redundant _VALUE suffixes.",
+      "type": "Primary"
+    },
+    {
+      "id": 29,
+      "project_id": 25,
+      "project_name": "Indoor Kepware Data Logging",
+      "date": "2026-08-27",
+      "engineer": "Mazen",
+      "planned_today": "Configure Kepware Data Logger plugin and deploy MS SQL Server destination table",
+      "actually_done": "Yes",
+      "comments": "Fixed ODBC type codes to SQL_FLOAT (6) and SQL_VARCHAR (12). Deployed [dbo].[TestWheel_Logger] on LCZ_MMS database; verified live telemetry writing for Tianjin_4.",
+      "type": "Primary"
+    },
+    {
+      "id": 30,
+      "project_id": 25,
+      "project_name": "Indoor Kepware Data Logging",
+      "date": "2026-08-28",
+      "engineer": "Mazen",
+      "planned_today": "Request Dremio virtual dataset publishing and design Grafana paired chart architecture",
+      "actually_done": "Yes",
+      "comments": "Sent formal request to Eng. Ahmed Osman to publish TestWheel_Logger on Dremio. Authored Indoor_TestWheel_Dashboard_Spec.md with 4 speed-synchronized chart pairs and KPI gauges.",
+      "type": "Primary"
     }
   ]
 }
