@@ -344,9 +344,9 @@
       "start_date": "2026-08-10",
       "due_date": "",
       "assigned_to": "Mazen",
-      "latest_update": "Sub-1.5s RapidOCR + PyZBar engine, closed-catalog inverted index (23,023 SKUs), HTTPS mobile camera & interactive SVG polygon UI deployed",
-      "next_step": "Plant maintenance field trials & multi-plant stock auto-sync pipeline",
-      "blocked_by": null,
+      "latest_update": "FastAPI HTTPS Server, Mobile Camera Viewfinder & SVG Polygon UI",
+      "next_step": "Plant Maintenance Technician Mobile Field Trials & Feedback",
+      "blocked_by": "Electrical Maintenance",
       "notes": "Workspace at Desktop\\SAP Spare Part AI Locator. Runs FastAPI HTTPS on port 8000. Indexed 28,321 plant rows across 23,023 materials with character confusion recovery."
     }
   ],
@@ -2414,7 +2414,7 @@
       "assigned_to": "Mazen / Maintenance Team",
       "duration": 11,
       "start_date": "2026-08-19",
-      "end_date": "2026-08-30",
+      "end_date": "",
       "progress": 50,
       "status": "In progress",
       "dependencies": "s4",
