@@ -9,9 +9,9 @@
       "start_date": "2026-06-12",
       "due_date": "",
       "assigned_to": "Team",
-      "latest_update": "KEPServerEX Signal Standardization & Link Tags (Mch 2, 3, 9, 12, 22)",
-      "next_step": "Dremio Camera Log Sync & IT Stored Procedure Integration",
-      "blocked_by": "IT",
+      "latest_update": "Dremio Camera Log Sync & IT Stored Procedure Integration",
+      "next_step": "Handheld Scanner Operator Deployment (Mch 9 only)",
+      "blocked_by": "Operations",
       "notes": "Fleet expansion was canceled to focus 100% on Machine 9 operational stability. Mch 9 camera & Kepware verified. Dremio sync logged with IT (@Osman, @Nabil)."
     },
     {
@@ -628,8 +628,8 @@
       "duration": 0,
       "start_date": "2026-07-28",
       "end_date": "",
-      "progress": 25,
-      "status": "In progress",
+      "progress": 100,
+      "status": "Completed",
       "dependencies": "s17",
       "section": "DEPLOY",
       "external_dep": "IT"
