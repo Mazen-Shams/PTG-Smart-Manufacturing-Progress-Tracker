@@ -368,13 +368,13 @@
       "name": "Manex TreadTrace Python Service",
       "description": "Complete asynchronous Python daemon (TreadScan_Python_Trace) replacing legacy LabVIEW 2020 camera system. Features kernel TCP socket keep-alive (SIO_KEEPALIVE_VALS), real-time WebSocket dashboard (port 8088), NSSM Windows Service (pycamera), and MS SQL Server stored procedure execution.",
       "status": "In progress",
-      "priority": 10,
+      "priority": 9999,
       "start_date": "2026-08-12",
       "due_date": "",
       "assigned_to": "Mazen",
-      "latest_update": "pycamera Windows Service live on production RDP server actively tracking Machine C1 with sub-7s socket reconnect",
-      "next_step": "Fleet transition of remaining 25 building machines from legacy LabVIEW service to pycamera",
-      "blocked_by": null,
+      "latest_update": "Production NSSM Service (pycamera) Deployment & Machine C1 Live Trial",
+      "next_step": "Machine C1 24/7 Production Reliability & False-Trigger Verification",
+      "blocked_by": "Maintenance",
       "notes": "Workspace at Desktop\\Manex Tread Scanning Python Implementation. Deployed as NSSM Windows service on production RDP server (EGAD-XMAGNUAA1I) tracking machine C1 (172.22.105.107:22172). Live dashboard on http://localhost:8088."
     }
   ],
