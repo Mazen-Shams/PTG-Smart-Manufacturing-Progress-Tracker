@@ -334,6 +334,20 @@
       "next_step": "Dremio Virtual Dataset Publication & Access Verification",
       "blocked_by": "ICT / Ahmed Osman",
       "notes": "Workspace at Desktop\\Indoor Kepware Data Logging. Table [dbo].[TestWheel_Logger] active with 16 FLOAT process columns + MCH + timestamp. Multi-machine architecture ready for Tianjin 1..10."
+    },
+    {
+      "id": 26,
+      "name": "SAP Spare Part AI Locator",
+      "description": "Deep-learning computer vision (RapidOCR ONNX) & closed-catalog search engine for maintenance technicians. Scans industrial component nameplates, resolves 9-digit SAP material codes, storage bins (SP), and live stock levels in <1.5s.",
+      "status": "In progress",
+      "priority": 8,
+      "start_date": "2026-08-10",
+      "due_date": "",
+      "assigned_to": "Mazen",
+      "latest_update": "Sub-1.5s RapidOCR + PyZBar engine, closed-catalog inverted index (23,023 SKUs), HTTPS mobile camera & interactive SVG polygon UI deployed",
+      "next_step": "Plant maintenance field trials & multi-plant stock auto-sync pipeline",
+      "blocked_by": null,
+      "notes": "Workspace at Desktop\\SAP Spare Part AI Locator. Runs FastAPI HTTPS on port 8000. Indexed 28,321 plant rows across 23,023 materials with character confusion recovery."
     }
   ],
   "steps": [
@@ -2331,6 +2345,111 @@
       "dependencies": "s6",
       "section": "FUTURE",
       "external_dep": ""
+    },
+    {
+      "id": 138,
+      "project_id": 26,
+      "step_code": "s1",
+      "name": "Deep Learning OCR Engine (RapidOCR ONNX + PyZBar Barcode Pipeline)",
+      "assigned_to": "Mazen",
+      "duration": 4,
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-14",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": null,
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 139,
+      "project_id": 26,
+      "step_code": "s2",
+      "name": "SAP Master Inventory Inverted Indexer & Dynamic Header Mapping",
+      "assigned_to": "Mazen",
+      "duration": 2,
+      "start_date": "2026-08-14",
+      "end_date": "2026-08-16",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s1",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 140,
+      "project_id": 26,
+      "step_code": "s3",
+      "name": "Closed-Catalog Matcher & Character Confusion Recovery Engine",
+      "assigned_to": "Mazen",
+      "duration": 2,
+      "start_date": "2026-08-16",
+      "end_date": "2026-08-18",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s2",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 141,
+      "project_id": 26,
+      "step_code": "s4",
+      "name": "FastAPI HTTPS Server, Mobile Camera Viewfinder & SVG Polygon UI",
+      "assigned_to": "Mazen",
+      "duration": 1,
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-18",
+      "progress": 100,
+      "status": "Completed",
+      "dependencies": "s3",
+      "section": "PAST",
+      "external_dep": null
+    },
+    {
+      "id": 142,
+      "project_id": 26,
+      "step_code": "s5",
+      "name": "Plant Maintenance Technician Mobile Field Trials & Feedback",
+      "assigned_to": "Mazen / Maintenance Team",
+      "duration": 11,
+      "start_date": "2026-08-19",
+      "end_date": "2026-08-30",
+      "progress": 50,
+      "status": "In progress",
+      "dependencies": "s4",
+      "section": "CURRENT",
+      "external_dep": "Electrical Maintenance"
+    },
+    {
+      "id": 143,
+      "project_id": 26,
+      "step_code": "s6",
+      "name": "Automated SAP Inventory Scheduled Ingestion & Dremio Sync",
+      "assigned_to": "Mazen / ICT",
+      "duration": 0,
+      "start_date": "",
+      "end_date": "",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s5",
+      "section": "FUTURE",
+      "external_dep": "ICT"
+    },
+    {
+      "id": 144,
+      "project_id": 26,
+      "step_code": "s7",
+      "name": "Plant-wide Kiosk & Mobile Deployment for Shift Technicians",
+      "assigned_to": "Mazen / Tareq Moustafa",
+      "duration": 0,
+      "start_date": "",
+      "end_date": "",
+      "progress": 0,
+      "status": "Not started",
+      "dependencies": "s6",
+      "section": "FUTURE",
+      "external_dep": "Maintenance Unit"
     }
   ],
   "logs": [
@@ -2662,6 +2781,39 @@
       "planned_today": "Request Dremio virtual dataset publishing and design Grafana paired chart architecture",
       "actually_done": "Yes",
       "comments": "Sent formal request to Eng. Ahmed Osman to publish TestWheel_Logger on Dremio. Authored Indoor_TestWheel_Dashboard_Spec.md with 4 speed-synchronized chart pairs and KPI gauges.",
+      "type": "Primary"
+    },
+    {
+      "id": 31,
+      "project_id": 26,
+      "project_name": "SAP Spare Part AI Locator",
+      "date": "2026-08-14",
+      "engineer": "Mazen",
+      "planned_today": "Benchmark Deep Learning OCR engines and build SAP Excel indexing pipeline",
+      "actually_done": "Yes",
+      "comments": "Benchmarked RapidOCR ONNX against Tesseract; achieved 0.4s inference. Built dynamic Excel indexer parsing 28,321 rows across 23,023 materials into catalog_index.json.",
+      "type": "Primary"
+    },
+    {
+      "id": 32,
+      "project_id": 26,
+      "project_name": "SAP Spare Part AI Locator",
+      "date": "2026-08-17",
+      "engineer": "Mazen",
+      "planned_today": "Develop closed-catalog matcher with entity extraction and OCR character recovery",
+      "actually_done": "Yes",
+      "comments": "Implemented 5-tier scoring with brand segregation (AB vs ABB), kW/RPM rating parsing, and character confusion recovery (P<->F for FCA motors).",
+      "type": "Primary"
+    },
+    {
+      "id": 33,
+      "project_id": 26,
+      "project_name": "SAP Spare Part AI Locator",
+      "date": "2026-08-18",
+      "engineer": "Mazen",
+      "planned_today": "Build responsive mobile web app with HTTPS camera capture and WhatsApp integration",
+      "actually_done": "Yes",
+      "comments": "Built FastAPI backend with SAN SSL certificates for mobile browser camera access. Created Prometeon corporate UI with SVG polygon overlays and 1-tap WhatsApp sharing.",
       "type": "Primary"
     }
   ]
