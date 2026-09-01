@@ -4,14 +4,14 @@
       "id": 1,
       "name": "Tread Barcode Scan",
       "description": "1",
-      "status": "In progress",
+      "status": "On Hold",
       "priority": 1,
       "start_date": "2026-06-12",
       "due_date": "",
       "assigned_to": "Team",
-      "latest_update": "KEPServerEX Verification (Mch 2, 3, 9, 12, 22) & Dremio Sync Escalated",
-      "next_step": "IT Dremio Log Sync Fix & Quality/Ops Handheld Trial (Mch 2, 3, 12, 22)",
-      "blocked_by": "IT / Dremio Log Sync",
+      "latest_update": "KEPServerEX Signal Standardization & Link Tags (Mch 2, 3, 9, 12, 22)",
+      "next_step": "Camera IP Wireless Network Access Configuration",
+      "blocked_by": "IT / Network",
       "notes": "MOM 28/7: KEPServerEX & Camera setup 100% verified for Mch 2, 3, 9, 12, 22. Dremio sync issue logged to IT (@Osman Ahmed, @Nabil Ahmed); Handheld deployment assigned to Ops (@Attia Yasser); Barcode printing assigned to Quality (@Ashraf Nada, @Khalifa Ahmed)."
     },
     {
