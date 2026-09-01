@@ -2330,7 +2330,7 @@
       "status": "Not started",
       "dependencies": "s6",
       "section": "FUTURE",
-      "external_dep": "Quality / Indoor Lab"
+      "external_dep": ""
     }
   ],
   "logs": [
